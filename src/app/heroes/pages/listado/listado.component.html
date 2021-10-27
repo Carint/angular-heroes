@@ -1,0 +1,9 @@
+<h1>Listado de heroes</h1>
+
+<mat-divider></mat-divider>
+
+<div fxLayout="row wrap" fxLayoutAlign="space-evenly stretch" fxLayoutGap="20px">
+  <div fxFlex="20" fxFlex.xs="100" fxFlex.sm="40" fxFlex.md="30" *ngFor="let heroe of heroes">
+    <app-heroe-tarjeta [heroe]="heroe"></app-heroe-tarjeta>
+  </div>
+</div>
